@@ -5,21 +5,19 @@ from .serializers import ChatSerializer
 from .models import ChatModel
 import markdown
 
-# Create your views here.
-
-class ChatView(generics.ListCreateAPIView):
-    queryset = ChatModel.objects.all()
-    serializer_class = ChatSerializer
     
-    def post(self, request, *args, **kwargs):
+def Chat(self, request, *args, **kwargs):
+    if request.method == 'POST':
         chat_string = request.data.get('chat_string', '')
         md = markdown.Markdown(extensions=["fenced_code","codehilite"])
         chat_string = md.convert(chat_string)
         processed_chat = chat_string
         return JsonResponse({'processed_chat': processed_chat}) 
+    else:
+        return JsonResponse({'processed_chat': "Invalid Request"}) 
 
     
-def GemmaModel(request):
+def Bert(request):
     if request.method == 'POST':
         try:
             question = request.data.get('question')
