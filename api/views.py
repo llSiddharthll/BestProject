@@ -17,3 +17,9 @@ class ChatView(generics.ListCreateAPIView):
         chat_string = md.convert(chat_string)
         processed_chat = chat_string
         return JsonResponse({'processed_chat': processed_chat}) 
+    
+def GemmaModel(request):
+    question = request.data.get('question')
+    model = "https://github.com/llSiddharthll/Bert/blob/main/bert_model.ckpt.data-00000-of-00001"
+    result = model(question)
+    return JsonResponse({'result': result})

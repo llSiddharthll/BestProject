@@ -3,5 +3,7 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    path('chatapi/', ChatView.as_view(), name='chat')
+    path('chatapi/', ChatView.as_view(), name='chat'),
+    path('bert/', views.GemmaModel, name='bert')
+    
 ]
