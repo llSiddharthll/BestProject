@@ -7,7 +7,7 @@ import markdown
 
 # Create your views here.
 
-class ChatView(generics.RetrieveUpdateDestroyAPIView):
+class ChatView(generics.ListCreateAPIView):
     queryset = ChatModel.objects.all()
     serializer_class = ChatSerializer
     
