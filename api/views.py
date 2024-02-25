@@ -4,6 +4,8 @@ from django.http import JsonResponse
 from rest_framework import generics
 from .serializers import ChatSerializer, BertSerializer
 import markdown
+from rest_framework.response import Response
+from rest_framework import status
 
 class ChatAPIView(generics.CreateAPIView):
     serializer_class = ChatSerializer
@@ -16,7 +18,8 @@ class ChatAPIView(generics.CreateAPIView):
         md = markdown.Markdown(extensions=["fenced_code", "codehilite"])
         processed_chat = md.convert(chat_string)
         
-        return JsonResponse({'processed_chat': processed_chat})
+        headers = self.get_success_headers(chat_serializer.data)
+        return Response(processed_chat, status=status.HTTP_201_CREATED, headers=headers)
 
 
 class BertAPIView(generics.CreateAPIView):
