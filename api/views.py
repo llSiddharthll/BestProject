@@ -34,6 +34,7 @@ class BertAPIView(generics.CreateAPIView):
             # Your model logic for Bert goes here
             model = "https://github.com/llSiddharthll/Bert/blob/main/bert_model.ckpt.data-00000-of-00001"
             result = model(question)
-            return JsonResponse({'result': result})
+            headers = self.get_success_headers(bert_serializer.data)
+            return Response(result, status=status.HTTP_201_CREATED, headers=headers)
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=500)
