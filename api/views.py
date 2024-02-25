@@ -1,30 +1,36 @@
-from django.shortcuts import render
+
+# views.py
 from django.http import JsonResponse
 from rest_framework import generics
-from .serializers import ChatSerializer
-from .models import ChatModel
+from .serializers import ChatSerializer, BertSerializer
 import markdown
 
-    
-def Chat(self, request, *args, **kwargs):
-    if request.method == 'POST':
-        chat_string = request.data.get('chat_string', '')
-        md = markdown.Markdown(extensions=["fenced_code","codehilite"])
-        chat_string = md.convert(chat_string)
-        processed_chat = chat_string
-        return JsonResponse({'processed_chat': processed_chat}) 
-    else:
-        return JsonResponse({'processed_chat': "Invalid Request"}) 
+class ChatAPIView(generics.CreateAPIView):
+    serializer_class = ChatSerializer
 
-    
-def Bert(request):
-    if request.method == 'POST':
+    def create(self, request, *args, **kwargs):
+        chat_serializer = self.get_serializer(data=request.data)
+        chat_serializer.is_valid(raise_exception=True)
+        
+        chat_string = chat_serializer.validated_data['chat_string']
+        md = markdown.Markdown(extensions=["fenced_code", "codehilite"])
+        processed_chat = md.convert(chat_string)
+        
+        return JsonResponse({'processed_chat': processed_chat})
+
+
+class BertAPIView(generics.CreateAPIView):
+    serializer_class = BertSerializer
+
+    def create(self, request, *args, **kwargs):
+        bert_serializer = self.get_serializer(data=request.data)
+        bert_serializer.is_valid(raise_exception=True)
+
+        question = bert_serializer.validated_data['question']
         try:
-            question = request.data.get('question')
+            # Your model logic for Bert goes here
             model = "https://github.com/llSiddharthll/Bert/blob/main/bert_model.ckpt.data-00000-of-00001"
             result = model(question)
             return JsonResponse({'result': result})
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=500)
-    else:
-        return JsonResponse({'error': 'Invalid request method'}, status=400)
