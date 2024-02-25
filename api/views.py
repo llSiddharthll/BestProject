@@ -6,6 +6,8 @@ from .serializers import ChatSerializer, BertSerializer
 import markdown
 from rest_framework.response import Response
 from rest_framework import status
+import requests
+
 
 class ChatAPIView(generics.CreateAPIView):
     serializer_class = ChatSerializer
@@ -31,10 +33,28 @@ class BertAPIView(generics.CreateAPIView):
 
         question = bert_serializer.validated_data['question']
         try:
-            # Your model logic for Bert goes here
-            model = "https://github.com/llSiddharthll/Bert/blob/main/bert_model.ckpt.data-00000-of-00001"
-            result = model(question)
+            
+            API_URL = "https://api-inference.huggingface.co/models/google/gemma-2b"
+            headers = {"Authorization": "Bearer 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"}
+
+            def query(payload):
+                formatted_payload = f"""
+                    GPT4 Correct User: Hello<|end_of_turn|>
+                    GPT4 Correct Assistant: Hi<|end_of_turn|>
+                    GPT4 Correct User: What is your name?<|end_of_turn|>
+                    GPT4 Correct Assistant: My name is "Itachi Uchiha" of the village "leaf", I am a conversational bot made by Siddharth<|end_of_turn|>
+                    GPT4 Correct User: {payload}<|end_of_turn|>
+                    GPT4 Correct Assistant: 
+                    """
+                response = requests.post(
+                    API_URL, headers=headers, json={"inputs": formatted_payload}
+                )
+                return response.json()
+            
+            output = query(question)
+            
             headers = self.get_success_headers(bert_serializer.data)
-            return Response(result, status=status.HTTP_201_CREATED, headers=headers)
+            return Response(output, status=status.HTTP_201_CREATED, headers=headers)
+            
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=500)
