@@ -8,7 +8,21 @@ from rest_framework.response import Response
 from rest_framework import status
 import requests
 
+API_URL = "https://api-inference.huggingface.co/models/google/gemma-2b"
+headers = {"Authorization": "Bearer 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"}
 
+def query(payload):
+    formatted_payload = f"""
+        GPT4 Correct User: Hello<|end_of_turn|>
+        GPT4 Correct Assistant: Hi<|end_of_turn|>
+        GPT4 Correct User: What is your name?<|end_of_turn|>
+        GPT4 Correct Assistant: My name is "Itachi Uchiha" of the village "leaf", I am a conversational bot made by Siddharth<|end_of_turn|>
+        GPT4 Correct User: {payload}<|end_of_turn|>
+        GPT4 Correct Assistant: 
+        """
+    response = requests.post(API_URL, headers=headers, json={"inputs": formatted_payload})
+    return response.json()
+            
 class ChatAPIView(generics.CreateAPIView):
     serializer_class = ChatSerializer
 
@@ -33,24 +47,6 @@ class BertAPIView(generics.CreateAPIView):
 
         question = bert_serializer.validated_data['question']
         try:
-            
-            API_URL = "https://api-inference.huggingface.co/models/google/gemma-2b"
-            headers = {"Authorization": "Bearer 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"}
-
-            def query(payload):
-                formatted_payload = f"""
-                    GPT4 Correct User: Hello<|end_of_turn|>
-                    GPT4 Correct Assistant: Hi<|end_of_turn|>
-                    GPT4 Correct User: What is your name?<|end_of_turn|>
-                    GPT4 Correct Assistant: My name is "Itachi Uchiha" of the village "leaf", I am a conversational bot made by Siddharth<|end_of_turn|>
-                    GPT4 Correct User: {payload}<|end_of_turn|>
-                    GPT4 Correct Assistant: 
-                    """
-                response = requests.post(
-                    API_URL, headers=headers, json={"inputs": formatted_payload}
-                )
-                return response.json()
-            
             output = query(question)
             
             headers = self.get_success_headers(bert_serializer.data)
