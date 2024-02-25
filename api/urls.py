@@ -3,7 +3,7 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    path('chatapi/', views.Chat, name='chat'),
-    path('bert/', views.Bert, name='bert')
+    path('chatapi/', ChatAPIView.as_view(), name='chat'),
+    path('bert/', BertAPIView.as_view(), name='bert')
     
 ]
