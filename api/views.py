@@ -16,4 +16,4 @@ class ChatView(generics.RetrieveUpdateDestroyAPIView):
         md = markdown.Markdown(extensions=["fenced_code","codehilite"])
         chat_string = md.convert(chat_string)
         processed_chat = chat_string
-        return JsonResponse({'processed_chat': processed_chat})
+        return JsonResponse({'processed_chat': processed_chat}) 
