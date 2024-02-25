@@ -1,6 +1,8 @@
-from rest_framework.serializers import Serializer
+# serializers.py
+from rest_framework import serializers
 from .models import ChatModel
 
-class ChatSerializer(Serializer):
-    model = ChatModel
-    fields = '__all__'
+class ChatSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ChatModel
+        fields = '__all__'
