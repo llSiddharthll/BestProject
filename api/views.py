@@ -8,8 +8,13 @@ from rest_framework.response import Response
 from rest_framework import status
 import requests
 
-from transformers import AutoTokenizer, AutoModelForCausalLM
 
+API_URL = "https://api-inference.huggingface.co/models/microsoft/phi-2"
+headers = {"Authorization": "Bearer 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"}
+
+def query(payload):
+	response = requests.post(API_URL, headers=headers, json=payload)
+	return response.json()
 
 class ChatAPIView(generics.CreateAPIView):
     serializer_class = ChatSerializer
@@ -35,19 +40,11 @@ class BertAPIView(generics.CreateAPIView):
 
         question = bert_serializer.validated_data['question']
         try:
-            output = gemma(question)
+            output = query({"inputs": f'{question}?'})
             headers = self.get_success_headers(bert_serializer.data)
             return Response(output, status=status.HTTP_201_CREATED, headers=headers)
             
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=500)
 
-def gemma(input):
-        tokenizer = AutoTokenizer.from_pretrained("google/gemma-2b")
-        model = AutoModelForCausalLM.from_pretrained("google/gemma-2b")
-
-        input_text = input
-        input_ids = tokenizer(input_text, return_tensors="pt")
-
-        outputs = model.generate(**input_ids)
-        return tokenizer.decode(outputs[0])
+	
