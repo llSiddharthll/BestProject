@@ -13,4 +13,9 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'BestProject.settings')
 
-application = get_wsgi_application()
+vercel_env = os.environ.get('VERCEL_ENV', None)
+
+if vercel_env == 'true':
+    app = get_wsgi_application()
+else:
+    application = get_wsgi_application()
