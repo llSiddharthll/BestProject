@@ -4,6 +4,11 @@ from .serializers import ChatSerializer, BertSerializer
 import markdown
 from rest_framework.response import Response
 from rest_framework import status
+from webscout.AI import youChat
+import logging
+
+logger = logging.getLogger(__name__)
+youChat = youChat()
 
 class ChatAPIView(generics.CreateAPIView):
     serializer_class = ChatSerializer
@@ -24,13 +29,20 @@ class AIChatAPIView(generics.CreateAPIView):
     serializer_class = BertSerializer
 
     def create(self, request, *args, **kwargs):
-        bert_serializer = self.get_serializer(data=request.data)
-        bert_serializer.is_valid(raise_exception=True)
+        try:
+            bert_serializer = self.get_serializer(data=request.data)
+            bert_serializer.is_valid(raise_exception=True)
 
-        question = bert_serializer.validated_data["question"]
-        
-        from webscout.AI import youChat
-        youChat = youChat()
-        completion = youChat.create(question)
-        headers = self.get_success_headers(bert_serializer.data)
-        return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
+            question = bert_serializer.validated_data["question"]
+            
+            # Log the request and question
+            logger.info(f"Received request: {request.data}")
+            logger.info(f"Question: {question}")
+
+            while True:
+                completion = youChat.create(question)
+                headers = self.get_success_headers(bert_serializer.data)
+                return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
+        except Exception as e:
+            logger.error(f"Error: {str(e)}")
+            return Response(str(e), status=status.HTTP_500_INTERNAL_SERVER_ERROR)
