@@ -8,12 +8,22 @@ from rest_framework import status
 import requests
 
 
-API_URL = "https://api-inference.huggingface.co/models/deepset/roberta-base-squad2"
+API_URL = "https://api-inference.huggingface.co/models/openchat/openchat-3.5-0106"
+IMAGE_API_URL = "https://api-inference.huggingface.co/models/segmind/Segmind-Vega"
 headers = {"Authorization": "Bearer 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"}
 
-
 def query(payload):
-    response = requests.post(API_URL, headers=headers, json=payload)
+    formatted_payload = f"""
+        GPT4 Correct User: Hello<|end_of_turn|>
+        GPT4 Correct Assistant: Hi<|end_of_turn|>
+        GPT4 Correct User: What is your name?<|end_of_turn|>
+        GPT4 Correct Assistant: My name is "Itachi Uchiha" of the village "leaf", I am a conversational bot made by Siddharth<|end_of_turn|>
+        GPT4 Correct User: {payload}<|end_of_turn|>
+        GPT4 Correct Assistant: 
+        """
+    response = requests.post(
+        API_URL, headers=headers, json={"inputs": formatted_payload}
+    )
     return response.json()
 
 
@@ -41,14 +51,7 @@ class BertAPIView(generics.CreateAPIView):
 
         question = bert_serializer.validated_data["question"]
         try:
-            output = query(
-                {
-                    "inputs": {
-                        "question": question,
-                        "context": "My name is Itachi and I live in India.",
-                    },
-                }
-            )
+            output = query(question)
             headers = self.get_success_headers(bert_serializer.data)
             return Response(output, status=status.HTTP_201_CREATED, headers=headers)
 
