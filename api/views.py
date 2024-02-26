@@ -44,5 +44,5 @@ class AIChatAPIView(generics.CreateAPIView):
                 headers = self.get_success_headers(bert_serializer.data)
                 return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
         except Exception as e:
-            logger.error(f"Error: {str(e)}")
+            print(logger.error(f"Error: {str(e)}"))
             return Response(str(e), status=status.HTTP_500_INTERNAL_SERVER_ERROR)
