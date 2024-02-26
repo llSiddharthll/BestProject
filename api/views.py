@@ -37,8 +37,11 @@ class AIChatAPIView(generics.CreateAPIView):
 
             # Check if the subprocess was successful
             if result.returncode == 0:
+                output_lines = result.stdout.strip().splitlines()
+                status_code = int(output_lines[0].split()[0])  # Extract status code
+                content = ' '.join(output_lines[1:])  # Join the remaining lines as content
                 headers = self.get_success_headers(bert_serializer.data)
-                return Response({"result": result.stdout.strip()}, status=status.HTTP_201_CREATED, headers=headers)
+                return Response({"status_code": status_code, "content": content}, status=status.HTTP_201_CREATED, headers=headers)
             else:
                 return JsonResponse({"error": result.stderr.strip()}, status=500)
 
