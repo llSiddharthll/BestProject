@@ -5,26 +5,7 @@ from .serializers import ChatSerializer, BertSerializer
 import markdown
 from rest_framework.response import Response
 from rest_framework import status
-import requests
-
-
-API_URL = "https://api-inference.huggingface.co/models/openchat/openchat-3.5-0106"
-IMAGE_API_URL = "https://api-inference.huggingface.co/models/segmind/Segmind-Vega"
-headers = {"Authorization": "Bearer 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"}
-
-def query(payload):
-    formatted_payload = f"""
-        GPT4 Correct User: Hello<|end_of_turn|>
-        GPT4 Correct Assistant: Hi<|end_of_turn|>
-        GPT4 Correct User: What is your name?<|end_of_turn|>
-        GPT4 Correct Assistant: My name is "Itachi Uchiha" of the village "leaf", I am a conversational bot made by Siddharth<|end_of_turn|>
-        GPT4 Correct User: {payload}<|end_of_turn|>
-        GPT4 Correct Assistant: 
-        """
-    response = requests.post(
-        API_URL, headers=headers, json={"inputs": formatted_payload}
-    )
-    return response.json()
+import subprocess
 
 
 class ChatAPIView(generics.CreateAPIView):
@@ -42,7 +23,7 @@ class ChatAPIView(generics.CreateAPIView):
         return Response(processed_chat, status=status.HTTP_201_CREATED, headers=headers)
 
 
-class BertAPIView(generics.CreateAPIView):
+class AIChatAPIView(generics.CreateAPIView):
     serializer_class = BertSerializer
 
     def create(self, request, *args, **kwargs):
@@ -51,9 +32,17 @@ class BertAPIView(generics.CreateAPIView):
 
         question = bert_serializer.validated_data["question"]
         try:
-            output = query(question)
-            headers = self.get_success_headers(bert_serializer.data)
-            return Response(output, status=status.HTTP_201_CREATED, headers=headers)
+            command = ["python", "-c", f"from webscout.AI import YepChat; print(YepChat.chat_cli('{question}'))"]
+            result = subprocess.run(command, capture_output=True, text=True)
 
+            # Check if the subprocess was successful
+            if result.returncode == 0:
+                headers = self.get_success_headers(bert_serializer.data)
+                return Response({"result": result.stdout.strip()}, status=status.HTTP_201_CREATED, headers=headers)
+            else:
+                return JsonResponse({"error": result.stderr.strip()}, status=500)
+
+        except subprocess.CalledProcessError as e:
+            return JsonResponse({"error": e.stderr.strip()}, status=500)
         except Exception as e:
             return JsonResponse({"error": str(e)}, status=500)

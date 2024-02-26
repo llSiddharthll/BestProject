@@ -4,6 +4,6 @@ from .views import *
 
 urlpatterns = [
     path('chatapi/', ChatAPIView.as_view(), name='chat'),
-    path('bert/', BertAPIView.as_view(), name='bert')
+    path('aiChat/', AIChatAPIView.as_view(), name='bert')
     
 ]
