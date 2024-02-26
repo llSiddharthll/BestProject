@@ -4,11 +4,6 @@ from .serializers import ChatSerializer, BertSerializer
 import markdown
 from rest_framework.response import Response
 from rest_framework import status
-from webscout.AI import youChat
-import logging
-
-logger = logging.getLogger(__name__)
-youChat = youChat()
 
 class ChatAPIView(generics.CreateAPIView):
     serializer_class = ChatSerializer
@@ -34,10 +29,8 @@ class AIChatAPIView(generics.CreateAPIView):
 
         question = bert_serializer.validated_data["question"]
         
-        # Log the request and question
-        logger.info(f"Received request: {request.data}")
-        logger.info(f"Question: {question}")
-
+        from webscout.AI import youChat
+        youChat = youChat()
         completion = youChat.create(question)
         headers = self.get_success_headers(bert_serializer.data)
         return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
