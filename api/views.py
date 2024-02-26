@@ -6,7 +6,9 @@ import markdown
 from rest_framework.response import Response
 from rest_framework import status
 import subprocess
+from webscout.AI import youChat
 
+youChat = youChat()
 
 class ChatAPIView(generics.CreateAPIView):
     serializer_class = ChatSerializer
@@ -32,20 +34,10 @@ class AIChatAPIView(generics.CreateAPIView):
 
         question = bert_serializer.validated_data["question"]
         try:
-            command = ["python", "-c", f"from webscout.AI import YepChat; print(YepChat.chat_cli('{question}'))"]
-            result = subprocess.run(command, capture_output=True, text=True)
+            prompt = input(question)
+            completion = youChat.create(prompt)
+            headers = self.get_success_headers(bert_serializer.data)
+            return Response({"result": completion}, status=status.HTTP_201_CREATED, headers=headers)
 
-            # Check if the subprocess was successful
-            if result.returncode == 0:
-                output_lines = result.stdout.strip().splitlines()
-                status_code = int(output_lines[0].split()[0])  # Extract status code
-                content = ' '.join(output_lines[1:])  # Join the remaining lines as content
-                headers = self.get_success_headers(bert_serializer.data)
-                return Response({"status_code": status_code, "content": content}, status=status.HTTP_201_CREATED, headers=headers)
-            else:
-                return JsonResponse({"error": result.stderr.strip()}, status=500)
-
-        except subprocess.CalledProcessError as e:
-            return JsonResponse({"error": e.stderr.strip()}, status=500)
         except Exception as e:
             return JsonResponse({"error": str(e)}, status=500)
