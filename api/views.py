@@ -31,8 +31,6 @@ class AIChatAPIView(generics.CreateAPIView):
         bert_serializer.is_valid(raise_exception=True)
 
         question = bert_serializer.validated_data["question"]
-        print(question)
         completion = youChat.create(question)
-        print(completion)
         headers = self.get_success_headers(bert_serializer.data)
         return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
