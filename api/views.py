@@ -29,20 +29,15 @@ class AIChatAPIView(generics.CreateAPIView):
     serializer_class = BertSerializer
 
     def create(self, request, *args, **kwargs):
-        try:
-            bert_serializer = self.get_serializer(data=request.data)
-            bert_serializer.is_valid(raise_exception=True)
+        bert_serializer = self.get_serializer(data=request.data)
+        bert_serializer.is_valid(raise_exception=True)
 
-            question = bert_serializer.validated_data["question"]
-            
-            # Log the request and question
-            logger.info(f"Received request: {request.data}")
-            logger.info(f"Question: {question}")
+        question = bert_serializer.validated_data["question"]
+        
+        # Log the request and question
+        logger.info(f"Received request: {request.data}")
+        logger.info(f"Question: {question}")
 
-            while True:
-                completion = youChat.create(question)
-                headers = self.get_success_headers(bert_serializer.data)
-                return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
-        except Exception as e:
-            logger.error(f"Error: {str(e)}")
-            return Response(str(e), status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        completion = youChat.create(question)
+        headers = self.get_success_headers(bert_serializer.data)
+        return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
