@@ -1,11 +1,9 @@
-# views.py
 from django.http import JsonResponse
 from rest_framework import generics
 from .serializers import ChatSerializer, BertSerializer
 import markdown
 from rest_framework.response import Response
 from rest_framework import status
-import subprocess
 from webscout.AI import youChat
 
 youChat = youChat()
@@ -33,11 +31,8 @@ class AIChatAPIView(generics.CreateAPIView):
         bert_serializer.is_valid(raise_exception=True)
 
         question = bert_serializer.validated_data["question"]
-        try:
-            prompt = input(question)
-            completion = youChat.create(prompt)
-            headers = self.get_success_headers(bert_serializer.data)
-            return Response({"result": completion}, status=status.HTTP_201_CREATED, headers=headers)
-
-        except Exception as e:
-            return JsonResponse({"error": str(e)}, status=500)
+        print(question)
+        completion = youChat.create(question)
+        print(completion)
+        headers = self.get_success_headers(bert_serializer.data)
+        return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
