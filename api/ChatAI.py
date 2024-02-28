@@ -1,42 +1,29 @@
-from curl_cffi.requests import get, RequestsError
-from uuid import uuid4
-from re import findall
+import g4f
 
-def chatAI(prompt):
-    url = "https://you.com/api/streamingSearch"
+class Gemini:
+    def __init__(self):
+        self.messages = []
 
-    response = get(
-        url,
-        headers={
-            "cache-control": "no-cache",
-            "referer": "https://you.com/search?q=gpt4&tbm=youchat",
-            "cookie": f"safesearch_guest=Off; uuid_guest={str(uuid4())}",
-        },
-        params={
-            "q": prompt,
-            "page": 1,
-            "count": 10,
-            "safeSearch": "Off",
-            "onShoppingPage": False,
-            "mkt": "",
-            "responseFilter": "WebPages,Translations,TimeZone,Computation,RelatedSearches",
-            "domain": "youchat",
-            "queryTraceId": str(uuid4()),
-            "chat": [],
-        },
-        impersonate="chrome107",
-    )
-    if "youChatToken" not in response.text:
-        raise RequestsError("Unable to fetch the response.")
+    def chat(self, *args):
+        assert args != ()
 
-    return (
-        "".join(
-            findall(
-                r"{\"youChatToken\": \"(.*?)\"}",
-                response.content.decode("unicode-escape"),
-            )
+        message = " ".join(args)
+        self.messages.append({"role": "user", "content": message})
+
+        response = g4f.ChatCompletion.create(
+            model=g4f.models.default,
+            provider=g4f.Provider.Gemini,
+            messages=self.messages,
+            stream=True,
         )
-        .replace("\\n", "\n")
-        .replace("\\\\", "\\")
-        .replace('\\"', '"')
-    )
+        ms = ""
+        for message in response:
+            ms += message
+        self.messages.append({"role": "assistant", "content": ms.strip()}) # Strip whitespace from the message content
+        return ms.strip() # Return the message without trailing whitespace
+
+    @staticmethod
+    def chat_cli(message):
+        """Generate completion based on the provided message"""
+        gemini = Gemini()
+        return gemini.chat(message)

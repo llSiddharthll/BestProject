@@ -4,7 +4,7 @@ from .serializers import ChatSerializer, BertSerializer
 import markdown
 from rest_framework.response import Response
 from rest_framework import status
-from .ChatAI import chatAI
+from .ChatAI import Gemini
 
 class ChatAPIView(generics.CreateAPIView):
     serializer_class = ChatSerializer
@@ -31,7 +31,7 @@ class AIChatAPIView(generics.CreateAPIView):
 
             question = bert_serializer.validated_data["question"]
 
-            completion = chatAI(question)
+            completion = Gemini.chat_cli(question)
             headers = self.get_success_headers(bert_serializer.data)
             return Response(completion, status=status.HTTP_201_CREATED, headers=headers)
         except Exception as e:
