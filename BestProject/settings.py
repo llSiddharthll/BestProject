@@ -71,13 +71,14 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
-    'corsheaders.middleware.CorsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
     "https://best-project-ashy.vercel.app",
-    "http://127.0.0.1:8000"
+    "http://127.0.0.1:8000",
+    "http://localhost:8000"
 ]
 
 CORS_ALLOW_METHODS = [
