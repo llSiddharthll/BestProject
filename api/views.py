@@ -13,12 +13,19 @@ class ChatAPIView(generics.CreateAPIView):
         chat_serializer = self.get_serializer(data=request.data)
         chat_serializer.is_valid(raise_exception=True)
 
-        chat_string = chat_serializer.validated_data["chat_string"]
+        chat = chat_serializer.validated_data["chat"]
+        pfp = chat_serializer.validated_data["pfp"]
+        user_name = chat_serializer.validated_data["user_name"]
         md = markdown.Markdown(extensions=["fenced_code", "codehilite"])
-        processed_chat = md.convert(chat_string)
+        processed_chat = md.convert(chat)
 
+        response = {
+            "chat": processed_chat,
+            "pfp": pfp,
+            "user_name": user_name,
+        }
         headers = self.get_success_headers(chat_serializer.data)
-        return Response(processed_chat, status=status.HTTP_201_CREATED, headers=headers)
+        return Response(response, status=status.HTTP_201_CREATED, headers=headers)
 
 
 class AIChatAPIView(generics.CreateAPIView):
