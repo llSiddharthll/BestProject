@@ -1,0 +1,899 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "g4f",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "g4f",
+        "description": "g4f",
+        "detail": "g4f",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "markdown",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "markdown",
+        "description": "markdown",
+        "detail": "markdown",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "receiver",
+        "importPath": "django.dispatch",
+        "description": "django.dispatch",
+        "isExtraImport": true,
+        "detail": "django.dispatch",
+        "documentation": {}
+    },
+    {
+        "label": "user_activated",
+        "importPath": "djoser.signals",
+        "description": "djoser.signals",
+        "isExtraImport": true,
+        "detail": "djoser.signals",
+        "documentation": {}
+    },
+    {
+        "label": "UserViewSet",
+        "importPath": "djoser.views",
+        "description": "djoser.views",
+        "isExtraImport": true,
+        "detail": "djoser.views",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0001_initial",
+        "description": "api.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ChatModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('created_at', models.DateTimeField(auto_now_add=True)),",
+        "detail": "api.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0002_message_delete_chatmodel",
+        "description": "api.migrations.0002_message_delete_chatmodel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Message',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('user_name', models.CharField(max_length=25)),",
+        "detail": "api.migrations.0002_message_delete_chatmodel",
+        "documentation": {}
+    },
+    {
+        "label": "ApiConfig",
+        "kind": 6,
+        "importPath": "api.apps",
+        "description": "api.apps",
+        "peekOfCode": "class ApiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'api'",
+        "detail": "api.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Gemini",
+        "kind": 6,
+        "importPath": "api.ChatAI",
+        "description": "api.ChatAI",
+        "peekOfCode": "class Gemini:\n    def __init__(self):\n        self.messages = []\n    def chat(self, *args):\n        assert args != ()\n        message = \" \".join(args)\n        self.messages.append({\"role\": \"user\", \"content\": message})\n        response = g4f.ChatCompletion.create(\n            model=g4f.models.default,\n            provider=g4f.Provider.Gemini,",
+        "detail": "api.ChatAI",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "kind": 6,
+        "importPath": "api.models",
+        "description": "api.models",
+        "peekOfCode": "class Message(models.Model):\n    user_name = models.CharField(max_length=25)\n    content = models.TextField()\n    pfp = models.CharField(max_length=225)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return f'{self.user.username} - {self.created_at}'",
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "ChatSerializer",
+        "kind": 6,
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "peekOfCode": "class ChatSerializer(serializers.Serializer):\n    chat = serializers.CharField()\n    pfp = serializers.CharField()\n    user_name = serializers.CharField()\nclass BertSerializer(serializers.Serializer):\n    question = serializers.CharField()",
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BertSerializer",
+        "kind": 6,
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "peekOfCode": "class BertSerializer(serializers.Serializer):\n    question = serializers.CharField()",
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "api.urls",
+        "description": "api.urls",
+        "peekOfCode": "urlpatterns = [\n    path('chatapi/', ChatAPIView.as_view(), name='chat'),\n    path('aiChat/', AIChatAPIView.as_view(), name='bert'),\n    path('poll_messages/', views.poll_messages, name='poll-messages')\n]",
+        "detail": "api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ChatAPIView",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class ChatAPIView(generics.CreateAPIView):\n    serializer_class = ChatSerializer\n    def create(self, request, *args, **kwargs):\n        chat_serializer = self.get_serializer(data=request.data)\n        chat_serializer.is_valid(raise_exception=True)\n        chat = chat_serializer.validated_data[\"chat\"]\n        pfp = chat_serializer.validated_data[\"pfp\"]\n        user_name = chat_serializer.validated_data[\"user_name\"]\n        md = markdown.Markdown(extensions=[\"fenced_code\", \"codehilite\"])\n        processed_chat = md.convert(chat)",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "AIChatAPIView",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class AIChatAPIView(generics.CreateAPIView):\n    serializer_class = BertSerializer\n    def create(self, request, *args, **kwargs):\n        try:\n            bert_serializer = self.get_serializer(data=request.data)\n            bert_serializer.is_valid(raise_exception=True)\n            question = bert_serializer.validated_data[\"question\"]\n            completion = Gemini.chat_cli(question)\n            headers = self.get_success_headers(bert_serializer.data)\n            return Response(completion, status=status.HTTP_201_CREATED, headers=headers)",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "poll_messages",
+        "kind": 2,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "def poll_messages(request):\n    last_poll_time_str = request.GET.get('last_poll_time', None)\n    if last_poll_time_str:\n        try:\n            last_poll_time = timezone.datetime.fromisoformat(last_poll_time_str)\n        except ValueError:\n            last_poll_time = None\n    else:\n        last_poll_time = None\n    # Query for messages created after the last poll time",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "BestProject.asgi",
+        "description": "BestProject.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "BestProject.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-5e^#)wk8-b7v6q9cnbsi)i7*a)2(wtb4qx@p)(q3=fg0f228f_\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-5e^#)wk8-b7v6q9cnbsi)i7*a)2(wtb4qx@p)(q3=fg0f228f_\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\n# Application definition\nINSTALLED_APPS = [\n    \"corsheaders\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"*\"]\n# Application definition\nINSTALLED_APPS = [\n    \"corsheaders\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "ALLOWED_HOSTS = [\"*\"]\n# Application definition\nINSTALLED_APPS = [\n    \"corsheaders\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"corsheaders\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    # All Apps\n    \"api\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    \"DEFAULT_RENDERER_CLASSES\": [\n        \"rest_framework.renderers.JSONRenderer\",\n        \"rest_framework.renderers.BrowsableAPIRenderer\",\n    ],\n}\nDJOSER = {\n    \"PASSWORD_RESET_CONFIRM_URL\": \"/password/reset/confirm/{uid}/{token}\",\n    \"USERNAME_RESET_CONFIRM_URL\": \"/username/reset/confirm/{uid}/{token}\",\n    \"ACTIVATION_URL\": \"auth/activate/?uid={uid}&token={token}\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DJOSER",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "DJOSER = {\n    \"PASSWORD_RESET_CONFIRM_URL\": \"/password/reset/confirm/{uid}/{token}\",\n    \"USERNAME_RESET_CONFIRM_URL\": \"/username/reset/confirm/{uid}/{token}\",\n    \"ACTIVATION_URL\": \"auth/activate/?uid={uid}&token={token}\",\n    \"SEND_CONFIRMATION_EMAIL\": True,\n    \"SEND_ACTIVATION_EMAIL\": True,\n    \"SERIALIZERS\": {}\n}\nMIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n    \"whitenoise.middleware.WhiteNoiseMiddleware\",\n    \"corsheaders.middleware.CorsMiddleware\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://127.0.0.1:5500\",\n    \"https://best-project-ashy.vercel.app\",\n    \"http://127.0.0.1:8000\",\n    \"http://localhost:8000\"\n]\nCORS_ALLOW_METHODS = [\n    \"DELETE\",\n    \"GET\",\n    \"OPTIONS\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_METHODS",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "CORS_ALLOW_METHODS = [\n    \"DELETE\",\n    \"GET\",\n    \"OPTIONS\",\n    \"PATCH\",\n    \"POST\",\n    \"PUT\",\n]\nROOT_URLCONF = \"BestProject.urls\"\nTEMPLATES = [",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "ROOT_URLCONF = \"BestProject.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"BestProject.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": \"railway\",\n        \"USER\": \"postgres\",\n        \"PASSWORD\": \"Bc66bac3GCcABb-D1gbFFee-12AE4BD*\",\n        \"HOST\": \"monorail.proxy.rlwy.net\",  # Set to the appropriate host",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": \"railway\",\n        \"USER\": \"postgres\",\n        \"PASSWORD\": \"Bc66bac3GCcABb-D1gbFFee-12AE4BD*\",\n        \"HOST\": \"monorail.proxy.rlwy.net\",  # Set to the appropriate host\n        \"PORT\": \"39260\",  # Set to the appropriate port\n    }\n}",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, \"api\", \"static\")]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"staticfiles\")\n# Default primary key field type",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, \"api\", \"static\")]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"staticfiles\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, \"api\", \"static\")]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"staticfiles\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, \"api\", \"static\")]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"staticfiles\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSITE_ID = 1",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "STATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, \"api\", \"static\")]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"staticfiles\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSITE_ID = 1\nACCOUNT_EMAIL_VERIFICATION = \"mandatory\"\nACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7\n# email configs",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "STATICFILES_DIRS = [os.path.join(BASE_DIR, \"api\", \"static\")]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"staticfiles\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSITE_ID = 1\nACCOUNT_EMAIL_VERIFICATION = \"mandatory\"\nACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7\n# email configs\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, \"staticfiles\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSITE_ID = 1\nACCOUNT_EMAIL_VERIFICATION = \"mandatory\"\nACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7\n# email configs\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSITE_ID = 1\nACCOUNT_EMAIL_VERIFICATION = \"mandatory\"\nACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7\n# email configs\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SITE_ID",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "SITE_ID = 1\nACCOUNT_EMAIL_VERIFICATION = \"mandatory\"\nACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7\n# email configs\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"\nEMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ACCOUNT_EMAIL_VERIFICATION",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = \"mandatory\"\nACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7\n# email configs\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"\nEMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7\n# email configs\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"\nEMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "EMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"\nEMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "EMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"\nEMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"\nEMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"\nEMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "EMAIL_HOST_USER = \"llsiddharthtiwarill@gmail.com\"\nEMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "BestProject.settings",
+        "description": "BestProject.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = \"jsjk lgqa eerc utyu\"",
+        "detail": "BestProject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "BestProject.urls",
+        "description": "BestProject.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('api.urls')),\n    path('auth/', include('djoser.urls')),\n    path(\"auth/\", include(\"djoser.urls.jwt\")),\n    path('xtraroms/', include('xtraroms.urls')),\n]",
+        "detail": "BestProject.urls",
+        "documentation": {}
+    },
+    {
+        "label": "vercel_env",
+        "kind": 5,
+        "importPath": "BestProject.wsgi",
+        "description": "BestProject.wsgi",
+        "peekOfCode": "vercel_env = os.environ.get('VERCEL_ENV', None)\nif vercel_env == 'true':\n    app = get_wsgi_application()\nelse:\n    application = get_wsgi_application()",
+        "detail": "BestProject.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "xtraroms.migrations.0001_initial",
+        "description": "xtraroms.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CustomMOD',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "xtraroms.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "xtraroms.migrations.0002_alter_custommod_table_alter_customrom_table_and_more",
+        "description": "xtraroms.migrations.0002_alter_custommod_table_alter_customrom_table_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('xtraroms', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterModelTable(\n            name='custommod',\n            table='xtraroms_api_mods',\n        ),\n        migrations.AlterModelTable(",
+        "detail": "xtraroms.migrations.0002_alter_custommod_table_alter_customrom_table_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "xtraroms.migrations.0003_customuser",
+        "description": "xtraroms.migrations.0003_customuser",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n        ('xtraroms', '0002_alter_custommod_table_alter_customrom_table_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CustomUser',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "xtraroms.migrations.0003_customuser",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "xtraroms.migrations.0004_delete_customuser",
+        "description": "xtraroms.migrations.0004_delete_customuser",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('xtraroms', '0003_customuser'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='CustomUser',\n        ),\n    ]",
+        "detail": "xtraroms.migrations.0004_delete_customuser",
+        "documentation": {}
+    },
+    {
+        "label": "CustomROMAdmin",
+        "kind": 6,
+        "importPath": "xtraroms.admin",
+        "description": "xtraroms.admin",
+        "peekOfCode": "class CustomROMAdmin(admin.ModelAdmin):\n    list_display = ('name', 'device', 'credits', 'upload_date')\n    search_fields = ('name', 'device', 'credits')\nadmin.site.register(CustomROM, CustomROMAdmin)\nclass CustomMODAdmin(admin.ModelAdmin):\n    list_display = ('name', 'credits', 'upload_date')\n    search_fields = ('name', 'credits')\nadmin.site.register(CustomMOD, CustomMODAdmin)\nclass UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'is_authorized')",
+        "detail": "xtraroms.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CustomMODAdmin",
+        "kind": 6,
+        "importPath": "xtraroms.admin",
+        "description": "xtraroms.admin",
+        "peekOfCode": "class CustomMODAdmin(admin.ModelAdmin):\n    list_display = ('name', 'credits', 'upload_date')\n    search_fields = ('name', 'credits')\nadmin.site.register(CustomMOD, CustomMODAdmin)\nclass UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'is_authorized')\nadmin.site.register(UserProfile, UserProfileAdmin)",
+        "detail": "xtraroms.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfileAdmin",
+        "kind": 6,
+        "importPath": "xtraroms.admin",
+        "description": "xtraroms.admin",
+        "peekOfCode": "class UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'is_authorized')\nadmin.site.register(UserProfile, UserProfileAdmin)",
+        "detail": "xtraroms.admin",
+        "documentation": {}
+    },
+    {
+        "label": "XtraromsConfig",
+        "kind": 6,
+        "importPath": "xtraroms.apps",
+        "description": "xtraroms.apps",
+        "peekOfCode": "class XtraromsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'xtraroms'\n    def ready(self):\n        import xtraroms.signals",
+        "detail": "xtraroms.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CustomROM",
+        "kind": 6,
+        "importPath": "xtraroms.models",
+        "description": "xtraroms.models",
+        "peekOfCode": "class CustomROM(models.Model):\n    name = models.CharField(max_length=100)\n    device = models.CharField(max_length=50)\n    credits = models.CharField(null=True, max_length=50)\n    image = models.ImageField(upload_to=\"images\")\n    link = models.URLField(max_length=225)\n    details = models.TextField()\n    upload_date = models.DateField(null=True, blank=True) # use auto_now instead of auto_now_add\n    boot_link = models.URLField(max_length=225, null=True, blank=True)\n    likes = models.ManyToManyField(get_user_model(), related_name='liked_roms',default=0)",
+        "detail": "xtraroms.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomMOD",
+        "kind": 6,
+        "importPath": "xtraroms.models",
+        "description": "xtraroms.models",
+        "peekOfCode": "class CustomMOD(models.Model):\n    name = models.CharField(max_length=100)\n    image = models.ImageField(upload_to=\"images\")\n    credits = models.CharField(null=True, max_length=50)\n    link = models.URLField()\n    details = models.TextField()\n    upload_date = models.DateField(null=True, blank=True)\n    likes = models.ManyToManyField(get_user_model(), related_name='liked_mods',default=0)\n    class Meta:\n        db_table = 'xtraroms_api_mods'",
+        "detail": "xtraroms.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfile",
+        "kind": 6,
+        "importPath": "xtraroms.models",
+        "description": "xtraroms.models",
+        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    is_authorized = models.BooleanField(default=False)\n    profile_picture = models.ImageField(upload_to=\"profile_picture/\", null=True, blank=True)\n    status_choices = [\n        (\"online\", \"Online\"),\n        (\"offline\", \"Offline\"),\n        (\"away\", \"Away\"),\n    ]\n    status = models.CharField(max_length=10, choices=status_choices, default=\"offline\")",
+        "detail": "xtraroms.models",
+        "documentation": {}
+    },
+    {
+        "label": "activate_profile",
+        "kind": 2,
+        "importPath": "xtraroms.signals",
+        "description": "xtraroms.signals",
+        "peekOfCode": "def activate_profile(user, request, **kwargs):\n    user.is_active = True\n    UserProfile.objects.create(user = user)",
+        "detail": "xtraroms.signals",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "xtraroms.urls",
+        "description": "xtraroms.urls",
+        "peekOfCode": "urlpatterns = [\n    path('activate/', UserViewSet.as_view({'get': 'activation', 'post': 'activation'}), name='user-activation'),\n]",
+        "detail": "xtraroms.urls",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'BestProject.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
