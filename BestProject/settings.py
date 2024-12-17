@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "xtraroms.apps.XtraromsConfig",
     "djoser",
     "rest_framework",
+    'rest_framework_simplejwt',
 ]
 
 REST_FRAMEWORK = {
@@ -51,6 +52,9 @@ REST_FRAMEWORK = {
         "rest_framework.renderers.JSONRenderer",
         "rest_framework.renderers.BrowsableAPIRenderer",
     ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
 }
 
 DJOSER = {
